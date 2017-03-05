@@ -80,7 +80,7 @@ div#contact-button input[type="reset"] {
 div#booktable-background {
 	clear: both;
 	margin-bottom: 0px;
-	background: url("../../images/book-table.jpg") no-repeat center / cover;
+	background: url("images/book-table.jpg") no-repeat center / cover;
 	/*outline: 1px solid black;*/
 }
 

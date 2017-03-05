@@ -1,0 +1,359 @@
+/*Section 1*/
+body{
+	padding: 0px;
+	margin: 0px;
+}
+div.navigation{
+   position: fixed;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   background-color: white;
+   width: 100%;
+   margin-left: auto ;
+   margin-right: auto ;
+   top: -80px;
+   z-index: 2;
+}
+div.navigation ul{
+	list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    zoom:1;
+    
+}
+div.navigation li{
+	padding: 2px;
+    width: 19%;
+    display: inline-block;
+   
+    margin-top: 0px;
+    font-size: 25px;
+}
+div.navigation li.logo{
+	position:relative;
+	top: 10px;
+}
+div.navigation li.logo img{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	top: 70px;
+}
+div.navigation li a{
+	text-decoration: none;
+	color: black;
+
+}
+div.welcome{
+	background-image: url("../../images/header.jpg");
+	height: 650px;
+	display: flex;
+    justify-content: center;
+}
+div.welcome .welcome-items{
+	align-self: center;
+	width: 100%;
+}
+div.welcome .headline{
+	color: white;
+	text-align: center;
+   	background-color: black;
+    font-size: 40px;
+}
+div.welcome .book{
+	opacity: 0.5;
+	background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+/*Section 2*/
+div.content{
+	margin-top: 70px;
+}
+div.intro{
+	width: 100%;
+}
+div.intro h2{
+	padding-top: 80px;
+	padding-bottom: 25px;
+	width: 100%;
+	text-align: center;
+}
+div.intro p{
+	width: 75%;
+	text-align: center;
+	margin-right: 12%;
+	margin-left: 12%;
+	padding-bottom: 50px;
+
+}
+div.intro-with-image{
+	background-image: url("../../images/small1.jpg");
+	background-size: 100%;
+	background-position: right bottom;
+	background-size: 105%;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+/*Section 3*/
+div.menu{
+	padding: 10%;
+	color: white;
+	background-color: black;
+}
+div.menu .overview{
+	vertical-align: top;
+}
+div.menu .overview h3{
+	text-align: center;
+}
+div.menu .overview h2{
+	text-align: center;
+}
+div.menu .overview .overview-list{
+	margin-top: 40px;
+	margin-right: 20px;
+}
+div.menu .overview .overview-list a{
+	background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+div.menu .overview .overview-list a:hover{
+	background-color: red;
+}
+div.menu .overview .overview-list a:active{
+	background-color: red;
+}
+div.menu .imageview {
+	
+}
+div.menu .imageview table td{
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-left: 0%;
+	padding-right: 0%;
+    border-radius: 5px;
+}
+div.menu .imageview table td img{
+	border: 1px solid white;
+    border-radius: 5px;
+}
+div.menu .imageview table td .tag{
+	opacity: 0.5;
+	background-color: black;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	top: -75px;
+	padding-bottom: 15px;
+}
+div.menu .imageview table td .tag a{
+	text-decoration: none;
+	color: white;
+	margin-left: 25px;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 1px dashed #999
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	text-shadow: 2px 2px 2px #ffffff;
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+p {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Contact */
+
+div#contact {
+	width: 70%;
+	margin: auto;
+}
+
+div#contactus p{
+	font-size: 12px;
+}
+
+div#contact input {
+	width: 49%;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #fafafa;
+	padding: 10px;
+	border: none;
+}
+
+div#contact input[placeholder="Name"] {
+	float: left;
+}
+
+div#contact input[placeholder="Email"] {
+	float: right;
+}
+
+div#contact textarea {
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	background-color: #fafafa;
+	border: none;
+}
+div#contact-button {
+	margin: auto;
+	width: 60%;
+}
+
+div#contact-button input{
+	height: 35px;
+}
+
+div#contact-button input[type="submit"] {
+	background-color: black;
+	color: white;
+	float: left;
+	width: 55%;
+}
+
+div#contact-button input[type="reset"] {
+	float: right;
+	width: 40%;
+}
+
+/* Book a table*/
+div#booktable-background {
+	clear: both;
+	margin-bottom: 0px;
+	background: url("../../images/book-table.jpg") no-repeat center / cover;
+	/*outline: 1px solid black;*/
+}
+
+div#booktable {
+	width: 40%;
+	margin: auto;
+	margin-bottom: 0px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+div#booktable > h2 {
+	color: white;
+	font-size: 20px;
+	padding: 16px;
+	margin-bottom: 0px;
+	/*outline: 1px solid white;*/
+}
+
+div#book {
+	width: 90%;
+	margin: auto;
+	/*outline: 1px solid white;*/
+}
+
+div#book input[type="text"] {
+	width: 48%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 6px;
+	border: none;
+}
+
+div#book input[placeholder="Name"], input[placeholder="Date"] {
+	float: left;
+}
+
+div#book input[placeholder="Phone"], input[placeholder="Time"] {
+	float: right;
+}
+
+div#book textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: none;
+	clear: both;
+}
+
+div#book input[type="submit" ]{ 
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	background-color: rgba(80,80,80,0.8);
+	color: white;
+	width: 30%;
+	display: block;
+	padding: 8px;
+	/*outline: 1px solid white;*/
+}
+
+div#time-contact, div#contacts, div#time {
+	background-color: #fafafa;
+	outline: 1px solid black;
+}
+
+div#time {
+	float: left;
+}
+
+div#contacts {
+	float: right;
+}
+
+div#copyright {
+	clear: both;
+	margin: auto;
+	width: 80%;
+	outline: 1px solid black;
+}
+
+div#copyright ul li {
+	display: inline;
+}
+
+div#copyright ul {
+    text-align: center;
+    font-size: 80%;
+}
+
+div#copyright li:not(:first-child):before {
+	content: "|";
+	padding: 8px;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<div class="navbar">
+    <div id="for-ie">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Discounts">Discounts</a></li>
+            <li><a href="Contact">Contact Us</a></li>
+            <li><a href="About">About Us</a></li>
+        </ul>
+    </div>
+</div>
+<style>
+.navbar {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: #ABCDEF;
+}
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    border:1px solid red;
+    display:table;
+    overflow: hidden;
+}
+.navbar li{
+    float: left;
+    padding: 2px;
+    width: 150px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+</style>
+<!--[if IE]>
+<style>
+    #for-ie { text-align:center; }
+    #for-ie ul { display:inline-block; }
+    #for-ie ul { display:inline; }
+</style>
+<![endif]-->
+Tested in IE6, FX 3.
+
+EDIT: Alternate style without the extraneous element:
+
+<!doctype html>
+<div class="navbar">
+    <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Discounts">Discounts</a></li>
+        <li><a href="Contact">Contact Us</a></li>
+        <li><a href="About">About Us</a></li>
+    </ul>
+</div>
+<style>
+.navbar {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: #ABCDEF;
+}
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    padding: 0px;
+    zoom:1;
+    border:1px solid red;
+    overflow: hidden;
+}
+.navbar li{
+    padding: 2px;
+    width: 150px;
+    display:inline-block;
+}
+</style>
