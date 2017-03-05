@@ -324,17 +324,27 @@ div#book input[type="submit" ]{
 	/*outline: 1px solid white;*/
 }
 
-div#time-contact, div#contacts, div#time {
+div#time-contact{
 	background-color: #fafafa;
 	outline: 1px solid black;
 }
 
+.center {
+	margin: auto;
+}
+
+div#time-contact div.center {
+	width: 40%;
+}
+
 div#time {
 	float: left;
+	font-size: 60%;
 }
 
 div#contacts {
 	float: right;
+	font-size: 60%;
 }
 
 div#copyright {
