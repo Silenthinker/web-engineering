@@ -335,21 +335,32 @@ div#time-contact{
 
 div#time-contact div.center {
 	width: 40%;
+	clear: both;
+	position: relative;
+	/*outline: 1px solid black;*/
 }
 
 div#time {
-	float: left;
+	position: absolute;
+	left: 10px;
 	font-size: 60%;
 }
 
 div#contacts {
-	float: right;
+	position: absolute;
+	right: 10px;
 	font-size: 60%;
+}
+
+div.dummy {
+	clear: both;
+	padding: 20px;
 }
 
 div#copyright {
 	clear: both;
 	margin: auto;
+	padding: 20px;
 	width: 80%;
 	outline: 1px solid black;
 }
