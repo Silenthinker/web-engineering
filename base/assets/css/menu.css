@@ -1,4 +1,9 @@
 /*Section 1*/
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
 body{
 	padding: 0px;
 	margin: 0px;
@@ -86,14 +91,15 @@ div.intro h2{
 	padding-bottom: 25px;
 	width: 100%;
 	text-align: center;
+	font-size: 40px;
 }
 div.intro p{
-	width: 75%;
+	width: 78%;
 	text-align: center;
 	margin-right: 12%;
 	margin-left: 12%;
 	padding-bottom: 50px;
-
+	font-size: 18px;
 }
 div.intro-with-image{
 	background-image: url("../../images/small1.jpg");
@@ -108,7 +114,7 @@ div.intro-with-image{
 div.menu{
 	padding: 10%;
 	color: white;
-	background-color: black;
+	background-color: #330000;
 }
 div.menu .overview{
 	vertical-align: top;
@@ -174,13 +180,131 @@ div.menu .imageview table td .tag a{
 	border-bottom: 1px dashed #999
 }
 
-
-
-
-* {
-	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+/* Events */
+div.event {
+	background-color: #330000;
+	padding-bottom: 30px; 
 }
+
+div.container {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	/*outline: 1px solid white;*/
+}
+
+div.container img {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 40px;
+}
+
+div.event div.container .cell h3 {
+	margin: 0px;
+	font-size: 28px;
+}
+
+div.event div.container .cell h2 {
+	font-size: 16px;
+}
+
+div.event div.container .cell p {
+	font-size: 18px;
+	line-height: 160%;
+	color: #d5d5d5;
+}
+
+div.event div.container .cell p a{
+	color: white;
+	border-bottom: 1px dotted #ffffff;
+	text-decoration: none;
+}
+
+div.container.upcoming-events {
+	width: 90%;
+}
+
+div.container.past-events {
+	width: 80%;
+}
+
+div.container > h3 {
+	text-align: center;
+	font-size: 28px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+
+div.container a {
+	color: white;
+	text-decoration: none;
+}
+
+div.table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.col-3 {
+	float: left;
+	width: 33.33%;
+}
+
+div.col-4 {
+	float: left;
+	width: 25%;
+}
+
+div.cell {
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.button {
+	text-align: center;
+}
+
+div.container div.button a {
+	clear: both;
+	display: inline-block;
+	width: 180px;
+	height: 70px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	line-height: 70px;
+	background-color: black;
+	border: 1px solid white;
+}
+
+div.clip {
+	width: 80px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.img-anniversary {
+	background: url("../../images/4.jpg") 0 0;
+}
+
+.img-pasta {
+	background: url("../../images/2.jpg") 0 0;	
+}
+
+.img-happy {
+	background: url("../../images/3.png") 0 0;
+}
+
+.img-cooking {
+	background: url("../../images/cooking.jpg") 0 0;
+}
+
+/**********************/
 
 h2 {
 	text-align: center;
