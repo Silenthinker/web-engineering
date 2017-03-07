@@ -190,10 +190,6 @@ h2 {
 	margin-bottom: 30px;
 }
 
-p {
-	text-align: center;
-}
-
 ul {
 	list-style: none;
 }
@@ -201,12 +197,13 @@ ul {
 /* Contact */
 
 div#contact {
-	width: 70%;
+	width: 50%;
 	margin: auto;
 }
 
 div#contactus p{
 	font-size: 12px;
+	text-align: center;
 }
 
 div#contact input {
@@ -259,6 +256,7 @@ div#contact-button input[type="reset"] {
 div#booktable-background {
 	clear: both;
 	margin-bottom: 0px;
+	padding-bottom: 0px;
 	background: url("../../images/book-table.jpg") no-repeat center / cover;
 	/*outline: 1px solid black;*/
 }
@@ -267,6 +265,7 @@ div#booktable {
 	width: 40%;
 	margin: auto;
 	margin-bottom: 0px;
+	padding-bottom: 10px;
 	background-color: rgba(0,0,0,0.4);
 }
 
@@ -314,7 +313,7 @@ div#book textarea {
 div#book input[type="submit" ]{ 
 	margin: auto;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 	border: none;
 	background-color: rgba(80,80,80,0.8);
 	color: white;
@@ -325,44 +324,57 @@ div#book input[type="submit" ]{
 }
 
 div#time-contact{
-	background-color: #fafafa;
-	outline: 1px solid black;
-}
-
-.center {
-	margin: auto;
-}
-
-div#time-contact div.center {
-	width: 40%;
-	clear: both;
-	position: relative;
+	background-color: #f0f0f0;
+	margin-top: 0px;
+	padding-top: 0px;
 	/*outline: 1px solid black;*/
 }
 
-div#time {
-	position: absolute;
-	left: 10px;
-	font-size: 60%;
+div#time-contact b{
+	font-weight: 600;
 }
 
-div#contacts {
-	position: absolute;
-	right: 10px;
-	font-size: 60%;
+/* Table using div */
+.Table
+{
+    display: table;
+    margin: auto;
+}
+.Title
+{
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.Heading
+{
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
+}
+.Row
+{
+    display: table-row;
 }
 
-div.dummy {
-	clear: both;
-	padding: 20px;
+.Cell
+{
+    display: table-cell;
+    border: none;
+    font-size: 80%;
+    padding-left: 40px;
+    padding-right:40px;
 }
+
 
 div#copyright {
 	clear: both;
 	margin: auto;
-	padding: 20px;
+	padding: 40px;
+	margin-top: 40px;
 	width: 80%;
-	outline: 1px solid black;
+	/*outline: 1px solid black;*/
 }
 
 div#copyright ul li {
@@ -376,5 +388,4 @@ div#copyright ul {
 
 div#copyright li:not(:first-child):before {
 	content: "|";
-	padding: 8px;
 }
