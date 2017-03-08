@@ -246,6 +246,11 @@ div.table {
 	margin-right: auto;
 }
 
+div.col-2 {
+	float: left;
+	width: 50%;
+}
+
 div.col-3 {
 	float: left;
 	width: 33.33%;
@@ -304,31 +309,73 @@ div.clip {
 	background: url("../../images/cooking.jpg") 0 0;
 }
 
-/**********************/
+/* Contact us */
 
-h2 {
-	text-align: center;
-	text-shadow: 2px 2px 2px #ffffff;
-	font-weight: 100;
-	font-size: 30px;
-	margin-bottom: 30px;
+div.container.contact-us {
+	width: 60%;
 }
 
-ul {
+div.container.contact-us .table .input {
+	padding: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #e0e0e0;
+	font-size: 120%;
+}
+
+div.container.contact-us .table input {
+	width: 98%;
+	height: 56px;
+}
+
+div.container.contact-us .table input[placeholder="Name"] {
+	float: left;
+}
+
+div.container.contact-us .table input[placeholder="Email"] {
+	float: right;
+}
+
+div.container.contact-us .table > textarea{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: 20px;
+}
+
+div.contact-us .button {
+	height: 60px;
+	margin-top: 0px;
+	margin-bottom: 80px;
+	font-size: 110%;
+}
+
+div.contact-us .button[type="submit"] {
+	background-color: black;
+	color: white;
+	width: 50%;
+	float: left;
+}
+
+div.contact-us .button[type="reset"] {
+	background-color: white;
+	color: black;
+	width: 42%;
+	float: right;
+	border: 1px solid #e0e0e0;
+}
+
+
+div.contact-us .container {
+	width: 60%;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+
+div.contact-us ul {
 	list-style: none;
 }
 
-/* Contact */
-
-div#contact {
-	width: 50%;
-	margin: auto;
-}
-
-div#contactus p{
-	font-size: 12px;
-	text-align: center;
-}
 
 div#contact input {
 	width: 49%;
