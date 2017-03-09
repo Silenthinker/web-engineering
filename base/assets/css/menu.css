@@ -354,6 +354,7 @@ div.contact-us .button[type="submit"] {
 	color: white;
 	width: 50%;
 	float: left;
+	border: none;
 }
 
 div.contact-us .button[type="reset"] {
@@ -494,50 +495,41 @@ div#book input[type="submit" ]{
 	/*outline: 1px solid white;*/
 }
 
-div#time-contact{
+div.time-contact{
 	background-color: #f0f0f0;
 	margin-top: 0px;
 	padding-top: 0px;
 	/*outline: 1px solid black;*/
 }
 
-div#time-contact b{
+div.time-contact b{
 	font-weight: 600;
 }
 
-/* Table using div */
-.Table
-{
-    display: table;
-    margin: auto;
-}
-.Title
-{
-    display: table-caption;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-}
-.Heading
-{
-    display: table-row;
-    font-weight: bold;
-    text-align: center;
-}
-.Row
-{
-    display: table-row;
+
+div.time-contact .table {
+	width: 40%;
 }
 
-.Cell
-{
-    display: table-cell;
-    border: none;
-    font-size: 80%;
-    padding-left: 40px;
-    padding-right:40px;
+div.time-contact .cell {
+	text-align: left;
 }
 
+div.time-contact .cell h2 {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	font-size: 200%;
+	font-weight: 100;
+}
+
+div.time-contact .cell h2.right {
+	position: relative;
+	left: 50px;
+}
+
+div.time-contact .cell p {
+	clear: both;
+}
 
 div#copyright {
 	clear: both;
@@ -554,9 +546,10 @@ div#copyright ul li {
 
 div#copyright ul {
     text-align: center;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 div#copyright li:not(:first-child):before {
 	content: "|";
+	padding: 10px;
 }
