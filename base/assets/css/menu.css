@@ -666,6 +666,7 @@ div#copyright ul li {
 div#copyright ul {
     text-align: center;
     font-size: 1em;
+    padding-left: 0em;
 }
 div#copyright li:not(:first-child):before {
 	content: "|";
