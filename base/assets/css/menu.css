@@ -207,34 +207,72 @@ div.navigation ul{
     zoom:1;
     
 }
-div.navigation li{
+div.welcome-items div.hidden-list{
+	display: none;
+}
+div.navigation .nav-list li{
 	padding: 2px;
     width: 19%;
     display: inline-block;
     margin-top: 0px;
-    font-size: 25px;
 }
 
-div.navigation li a {
+div.navigation .nav-list li a {
 	font-family: serif;
-	font-size: 900;
-	font-size: 140%;
+	font-size: 200%;
+	text-decoration: none;
+	color: black;
+
 }
 
-div.navigation li.logo{
+div.navigation .nav-list li.logo{
 	position:relative;
 	top: 10px;
 }
-div.navigation li.logo img{
+div.navigation .nav-list li.logo img{
 	width: 120px;
 	height: 120px;
 	position: relative;
 	top: 70px;
 }
-div.navigation li a{
-	text-decoration: none;
-	color: black;
-
+@media screen and (max-width: 768px) {
+  .navigation .nav-list li:nth-child(1) {display: none;}
+  .navigation .nav-list li:nth-child(2) {display: none;}
+  .navigation .nav-list li:nth-child(4) {display: none;}
+  .navigation .nav-list li:nth-child(5) {display: none;}
+  div.navigation .nav-list li.logo{
+	position:relative;
+	top:inherit;
+	width: auto;
+	height: auto;
+  }
+  div.welcome-items div.hidden-list{
+	 display: block;
+	 position: fixed;
+	 top: 72px;
+	 z-index: 11
+  }
+  div.welcome-items div.hidden-list a:hover{
+	background-color: green;
+	}
+	div.welcome-items div.hidden-list a:active{
+		background-color: red;
+	}
+  div.welcome-items div.hidden-list a{
+  	display: block;
+  	background-color: black;
+    color: white;
+    
+    text-align: center; 
+    text-decoration: none;
+    display: block;
+    border: 1px solid white;
+    border-radius: 2px;
+    
+    display: flex;
+    justify-content: center;
+  }
+  
 }
 div.welcome{
 	background-image: url("../../images/header.jpg");
@@ -245,25 +283,33 @@ div.welcome{
 div.welcome .welcome-items{
 	align-self: center;
 	width: 100%;
+	
 }
 div.welcome .headline{
 	color: white;
 	text-align: center;
    	background-color: black;
-    font-size: 400%;
+    font-size: 500%;
 }
-div.welcome .book{
-	height: 60px;
-	width: 14%;
+div.welcome .book-button{
+	display: flex;
+	justify-content:center;
+}
+div.welcome .book-button .book{
+	/*height: 60px;
+	width: 14%;*/
 	opacity: 0.5;
 	background-color: black;
     color: white;
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
+    /*
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
+    */
+    align-self:center;
     border: 1px solid white;
     border-radius: 5px;
     line-height: 30px;
@@ -281,7 +327,7 @@ div.intro h2{
 	padding-bottom: 25px;
 	width: 100%;
 	text-align: center;
-	font-size: 3em;
+	font-size: 200%;
 	font-weight: 100;
 }
 div.intro p{
@@ -290,16 +336,21 @@ div.intro p{
 	margin-right: 12%;
 	margin-left: 12%;
 	padding-bottom: 50px;
-	font-size: 18px;
+	font-size: 120%;
 	line-height: 150%;
 }
 div.intro-with-image{
 	background-image: url("../../images/small1.jpg");
-	background-size: 100%;
-	background-position: right bottom;
-	background-size: 105%;
 	color: white;
 	text-shadow: 1px 1px black;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.parallax-intro{
+
 }
 
 /*Section 3*/
@@ -313,9 +364,11 @@ div.menu .overview{
 }
 div.menu .overview h3{
 	text-align: center;
+	font-size: 140%;
 }
 div.menu .overview h2{
 	text-align: center;
+	font-size: 180%;
 }
 div.menu .overview p {
 	line-height: 200%;
@@ -333,9 +386,9 @@ div.menu .overview .overview-list a{
     display: block;
     border: 1px solid white;
     border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
     font-size: 120%;
+    display: flex;
+    justify-content: center;
 
 }
 div.menu .overview .overview-list a:hover{
@@ -347,33 +400,77 @@ div.menu .overview .overview-list a:active{
 div.menu .imageview {
 	
 }
-div.menu .imageview table td{
-	padding-top: 0%;
-	padding-bottom: 0%;
-	padding-left: 0%;
-	padding-right: 0%;
-    border-radius: 5px;
+
+div.menu .imageview .view-content{
+
 }
-div.menu .imageview table td img{
+div.menu .imageview .view-content img{
 	border: 1px solid white;
     border-radius: 5px;
 }
-div.menu .imageview table td .tag{
+div.menu .imageview .view-content .tag{
 	opacity: 0.5;
 	background-color: black;
-	width: 100%;
+	width: 90%;
 	text-align: left;
 	position: relative;
 	top: -75px;
 	padding-bottom: 15px;
+	display: flex;
+	justify-content: center;
+
+
+
 }
-div.menu .imageview table td .tag a{
+div.menu .imageview .view-content .tag a{
 	text-decoration: none;
 	color: white;
-	margin-left: 25px;
-	font-size: 20px;
+	text-align: center;
+	font-size: 115%;
 	text-decoration: none;
 	border-bottom: 1px dashed #999
+}
+
+/*meida query stuff*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    	float: left;
+    	padding: 1%;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+	[class*="col-"] { 	
+		float:none;
+    	width: 100%;
+	}
+	.view-content img{
+		margin-left: 10%;
+		width: 70%;
+	}
+	div.menu .imageview .view-content .tag{
+		width: 70%;
+		margin-left: 10%;
+	}
+	*{
+		font-size: 90%;
+	}
 }
 
 /* Events */
