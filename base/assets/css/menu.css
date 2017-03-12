@@ -146,7 +146,7 @@ body{
 }
 div.navigation{
    position: fixed;
-   left: 50%;
+   left: 49%;
    transform: translate(-50%, 0%);
    background-color: white;
    width: 100%;
