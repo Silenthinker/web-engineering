@@ -9,7 +9,7 @@ body{
 	margin: 0px;
 }
 /********** Large devices only **********/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	body {
 		font-size: 100%;
 	}
@@ -55,7 +55,7 @@ body{
 }
 
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 	body {
 		font-size: 80%;
 	}
@@ -100,7 +100,7 @@ body{
   }
 }
 /********** Small devices only **********/
-@media (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
 	body {
 		font-size: 60%;
 	}
@@ -141,6 +141,51 @@ body{
     width: 91.66%;
   }
   .col-sm-12 {
+    width: 100%;
+  }
+}
+/********** Smaller devices only **********/
+@media screen and (max-width: 479px) {
+	body {
+		font-size: 20%;
+	}
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11 {
+    float: left;
+  }
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 74.99%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
     width: 100%;
   }
 }
@@ -236,7 +281,7 @@ div.intro h2{
 	padding-bottom: 25px;
 	width: 100%;
 	text-align: center;
-	font-size: 40px;
+	font-size: 3em;
 	font-weight: 100;
 }
 div.intro p{
@@ -465,47 +510,38 @@ div.clip {
 .img-cooking {
 	background: url("../../images/cooking.jpg") 0 0;
 }
-
 /* Contact us */
-
 div.container.contact-us {
 	width: 60%;
 }
-
 div.container.contact-us .table .input {
-	padding: 10px;
+	padding: 1em;
 	background-color: #f8f8f8;
 	border: 1px solid #e0e0e0;
 	font-size: 120%;
 }
-
 div.container.contact-us .table input {
 	width: 98%;
-	height: 56px;
+	height: 3em;
 }
-
 div.container.contact-us .table input[placeholder="Name"] {
 	float: left;
 }
-
 div.container.contact-us .table input[placeholder="Email"] {
 	float: right;
 }
-
 div.container.contact-us .table > textarea{
 	width: 100%;
-	height: 200px;
+	height: 10em;
 	position: relative;
-	top: 20px;
+	top: 1em;
 }
-
 div.contact-us .button {
-	height: 60px;
+	height: 3em;
 	margin-top: 0px;
-	margin-bottom: 80px;
-	font-size: 110%;
+	margin-bottom: 4em;
+	font-size: 1em;
 }
-
 div.contact-us .button[type="submit"] {
 	background-color: black;
 	color: white;
@@ -513,7 +549,6 @@ div.contact-us .button[type="submit"] {
 	float: left;
 	border: none;
 }
-
 div.contact-us .button[type="reset"] {
 	background-color: white;
 	color: black;
@@ -521,20 +556,21 @@ div.contact-us .button[type="reset"] {
 	float: right;
 	border: 1px solid #e0e0e0;
 }
-
-
 div.contact-us .container {
 	width: 60%;
-	margin-top: 50px;
-	margin-bottom: 60px;
+	margin-top: 4em;
+	margin-bottom: 4em;
 }
-
-
 div.contact-us ul {
 	list-style: none;
+	padding: 0em;
 }
-
-
+@media screen and (max-width: 767px) {
+	div.container.contact-us .table input {
+		width: 100%;
+		margin-top: 1em;
+	}
+}
 /* Book a table*/
 div.container.book-table {
 	clear: both;
@@ -543,7 +579,6 @@ div.container.book-table {
 	background: url("../../images/book-table.jpg") no-repeat fixed center / cover;
 	/*outline: 1px solid black;*/
 }
-
 div.container.book-table .intro {
 	font-size: 80%;
 	text-shadow: 2px 2px 2px #000000;
@@ -553,77 +588,85 @@ div.container.book-table .intro {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 div.container.book-table .container {
 	width: 90%;
 }
-
-div.container.book-table .table {
-}
-
-div.container.book-table .col-2 input {
-	margin-bottom: 20px;
+div.container.book-table input {
+	margin-bottom: 1em;
 	width: 96%;
-	height: 50px;
+	height: 3em;
 	font-size: 120%;
-	padding-left: 10px;
+	padding-left: 1em;
 }
-
-div.container.book-table div.col-2 input[placeholder="Name"] {
+div.container.book-table input[placeholder="Name"] {
 	float: left;
 }
-
-
-div.container.book-table div.col-2 input[placeholder="Phone"] {
+div.container.book-table input[placeholder="Phone"] {
 	float: right;
 }
-
-div.container.book-table div.col-2 input[placeholder="Date"] {
+div.container.book-table input[placeholder="Date"] {
 	float: left;
 }
-
-div.container.book-table div.col-2 input[placeholder="Time"] {
+div.container.book-table input[placeholder="Time"] {
 	float: right;
 }
-
 div.container.book-table textarea {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 220px;
-	padding: 10px;
+	height: 12em;
+	padding: 1em;
 	font-size: 120%;
 }
-
 div.container.book-table .button {
 	clear: both;
 	display: block;
 	position: relative;
-	bottom: 20px;
-	width: 160px;
-	height: 60px;
+	bottom: 2em;
+	width: 10em;
+	height: 3.6em;
 	margin: auto;
-	margin-top: 60px;
+	margin-top: 4em;
 	background-color: rgba(200,200,200,0.2);
 	border: none;
 	color: white;
 	font-size: 130%;
 }
-
-
-div#book input[type="submit" ]{ 
+div#book input[type="submit"]{ 
 	margin: auto;
-	margin-top: 10px;
-	/*margin-bottom: 10px;*/
+	margin-top: 2em;
 	border: none;
 	background-color: rgba(80,80,80,0.8);
 	color: white;
 	width: 30%;
 	display: block;
-	padding: 8px;
+	padding: 1em;
 	/*outline: 1px solid white;*/
 }
-
+@media screen and (max-width: 767px) {
+	div.container.book-table input {
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div.container.book-table textarea {
+		display: block;
+		width: 70%;
+	}
+	div.container.book-table input[placeholder="Name"] {
+		float: none;
+	}
+	div.container.book-table input[placeholder="Phone"] {
+		float: none;
+	}
+	div.container.book-table input[placeholder="Date"] {
+		float: none;
+	}
+	div.container.book-table input[placeholder="Time"] {
+		float: none;
+	}
+}
 /*Time and contact*/
 div.time-contact{
 	background-color: #f0f0f0;
@@ -641,8 +684,8 @@ div.time-contact .cell {
 	text-align: center;
 }
 div.time-contact .cell h2 {
-	padding-top: 8em;
-	padding-bottom: 4em;
+	padding-top: 4em;
+	padding-bottom: 2em;
 	font-size: 1.2em;
 	font-weight: 100;
 }
