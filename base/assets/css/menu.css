@@ -318,12 +318,15 @@ div.navigation .nav-list li.logo img{
 }
 div.welcome{
 	background-image: url("../../images/header.jpg");
-	height: 650px;
+	/*height: 650px;*/
+	padding-bottom: 2em;
 	display: flex;
     justify-content: center;
+
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+
 }
 div.welcome .welcome-items{
 	align-self: center;
