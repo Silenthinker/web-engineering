@@ -292,7 +292,7 @@ div.navigation .nav-list li.logo img{
   div.welcome-items div.hidden-list{
 	 display: block;
 	 position: fixed;
-	 top: 72px;
+	 top: 0px;
 	 z-index: 11
   }
   div.welcome-items div.hidden-list a:hover{
