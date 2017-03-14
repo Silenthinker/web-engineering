@@ -531,12 +531,16 @@ div.menu .imageview .view-content .tag a{
     	width: 100%;
 	}
 	.view-content img{
-		margin-left: 10%;
+		margin-left: 15%;
 		width: 70%;
 	}
 	div.menu .imageview .view-content .tag{
 		width: 70%;
-		margin-left: 10%;
+		margin-left: 15%;
+	}
+	div.menu .overview .overview-list{
+		margin-bottom: 20px;
+		margin-right: 0px;
 	}
 	*{
 		font-size: 90%;
