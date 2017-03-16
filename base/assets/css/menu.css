@@ -786,6 +786,7 @@ div.container.book-table {
 	background-size: 100% 100%;
 	/*outline: 1px solid black;*/
 }
+
 div.container.book-table .intro {
 	font-size: 80%;
 	text-shadow: 2px 2px 2px #000000;
@@ -795,6 +796,7 @@ div.container.book-table .intro {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 div.container.book-table .container {
 	width: 90%;
 }
@@ -851,15 +853,22 @@ div#book input[type="submit"]{
 	/*outline: 1px solid white;*/
 }
 @media screen and (max-width: 767px) {
+
+	div.container div.button a {
+		width: 30%;
+	}
 	div.container.book-table input {
 		width: 70%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		height: 2em;
+		margin-bottom: 0.5em;
 	}
 	div.container.book-table textarea {
 		display: block;
 		width: 70%;
+		padding: 0.5em;
 	}
 	div.container.book-table input[placeholder="Name"] {
 		float: none;
@@ -872,6 +881,45 @@ div#book input[type="submit"]{
 	}
 	div.container.book-table input[placeholder="Time"] {
 		float: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	div.container.book-table .intro{
+		width: 60%
+	}
+	div.container.book-table input{
+		height: 2em
+	}
+	div.container.book-table .button{
+		height: 3em;
+		margin-top: 3em;
+		bottom: 1em;
+	}
+	div.container.book-table textarea {
+		height: 8em;
+	}
+}	
+@media screen and (max-width: 479px) {
+	div.contact-us .button[type="submit"]{
+		width: 100%;
+		margin-bottom:2em;
+	}
+	div.contact-us .button[type="reset"]{
+		width: 100%;
+		margin-bottom:2em;
+	}
+	div.container.book-table .intro{
+		width: 80%
+	}
+	div.container.book-table .button{
+		height: 2em;
+		margin-top: 2em;
+	}
+	div.container.book-table textarea {
+		height: 6em
+	}
+	div.container div.button a {
+		width:40%;
 	}
 }
 /*Time and contact*/
