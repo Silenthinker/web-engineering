@@ -541,7 +541,9 @@ div.menu .imageview .view-content .tag a{
 	}
 	div.menu .overview .overview-list{
 		margin-bottom: 20px;
-		margin-right: 0px;
+    	margin-right: auto;
+    	margin-left: auto;
+    	width: 90%;
 	}
 	*{
 		font-size: 90%;
