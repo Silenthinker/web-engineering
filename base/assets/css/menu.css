@@ -614,10 +614,11 @@ div.container a {
 .flex-container {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: flex-start;
 }
 
 .flex-item {
-	margin: auto;
+	margin: 0 auto;
 }
 
 div.upcoming-events .flex-item {
@@ -778,6 +779,9 @@ div.contact-us ul {
 	div.container.contact-us .table input {
 		width: 100%;
 		margin-top: 1em;
+	}
+	div.container.contact-us .table .input {
+		width: 100%;
 	}
 }
 /* Book a table*/
