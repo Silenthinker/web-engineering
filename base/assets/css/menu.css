@@ -777,6 +777,9 @@ div.contact-us ul {
 		width: 100%;
 		margin-top: 1em;
 	}
+	div.container.contact-us .table .input {
+		width: 100%;
+	}
 }
 /* Book a table*/
 div.container.book-table {
