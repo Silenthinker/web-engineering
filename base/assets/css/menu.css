@@ -190,7 +190,7 @@ body{
     width: 100%;
   }
 }
-div.navigation{
+header.navigation{
    position: fixed;
    left: 50%;
    transform: translate(-50%, 0%);
@@ -201,24 +201,24 @@ div.navigation{
    top: -80px;
    z-index: 2;
 }
-div.navigation ul{
+header.navigation nav{
 	list-style-type: none;
     text-align: center;
     padding: 0px;
     zoom:1;
     
 }
-div.welcome-items div.hidden-list{
+div.welcome-items nav.hidden-list{
 	display: none;
 }
-div.navigation .nav-list li{
+header.navigation .nav-list li{
 	padding: 2px;
     width: 19%;
     display: inline-block;
     margin-top: 0px;
 }
 
-div.navigation .nav-list li a {
+header.navigation .nav-list li a {
 	font-family: serif;
 	font-size: 200%;
 	text-decoration: none;
@@ -226,16 +226,17 @@ div.navigation .nav-list li a {
 
 }
 
-div.navigation .nav-list li.logo{
+header.navigation .nav-list li.logo{
 	position:relative;
 	top: 10px;
 }
-div.navigation .nav-list li.logo img{
+header.navigation .nav-list li.logo img{
 	width: 120px;
 	height: 120px;
 	position: relative;
 	top: 70px;
 }
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -290,19 +291,19 @@ div.navigation .nav-list li.logo img{
 	width: auto;
 	height: auto;
   }
-  div.welcome-items div.hidden-list{
+  div.welcome-items nav.hidden-list{
 	 display: block;
 	 position: fixed;
 	 top: 0px;
 	 z-index: 11
   }
-  div.welcome-items div.hidden-list a:hover{
+  div.welcome-items nav.hidden-list a:hover{
 	background-color: green;
 	}
-	div.welcome-items div.hidden-list a:active{
+	div.welcome-items nav.hidden-list a:active{
 		background-color: red;
 	}
-  div.welcome-items div.hidden-list a{
+  div.welcome-items nav.hidden-list a{
   	display: block;
   	background-color: black;
     color: white;
@@ -318,7 +319,7 @@ div.navigation .nav-list li.logo img{
   }
   
 }
-div.welcome{
+section.welcome{
 	background-image: url("../../images/header.jpg");
 	background-size:100% 100%;
 	/*padding-bottom: 2em;*/
@@ -330,43 +331,43 @@ div.welcome{
     width: 100%;
 }
 @media screen and (min-width: 1024px) {
-	div.welcome{
+	section.welcome{
 		height: 650px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-	div.welcome{
+	section.welcome{
 		height: 500px;
 	}
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	
-	div.welcome{
+	section.welcome{
 		height: 400px;
 	}
 
 }
 @media screen and (max-width: 479px) {
-	div.welcome{
+	section.welcome{
 		height: 200px;
 	}
 }
-div.welcome .welcome-items{
+section.welcome .welcome-items{
 	align-self: center;
 	width: 100%;
 	
 }
-div.welcome .headline{
+section.welcome .headline{
 	color: white;
 	text-align: center;
    	background-color: black;
     font-size: 500%;
 }
-div.welcome .book-button{
+section.welcome .book-button{
 	display: flex;
 	justify-content:center;
 }
-div.welcome .book-button .book{
+section.welcome .book-button .book{
 	/*height: 60px;
 	width: 14%;*/
 	opacity: 0.5;
@@ -387,13 +388,13 @@ div.welcome .book-button .book{
     font-size: 120%;
 }
 /*Section 2*/
-div.content{
+main.content{
 	margin-top: 70px;
 }
-div.intro{
+article.intro{
 	width: 100%;
 }
-div.intro h2{
+article.intro header{
 	padding-top: 2em;
 	padding-bottom: 1em;
 	width: 100%;
@@ -401,7 +402,7 @@ div.intro h2{
 	font-size: 200%;
 	font-weight: 100;
 }
-div.intro p{
+article.intro p{
 	width: 78%;
 	text-align: center;
 	margin-right: 12%;
@@ -410,7 +411,7 @@ div.intro p{
 	font-size: 120%;
 	line-height: 150%;
 }
-div.intro-with-image{
+article.intro-with-image{
 	background-image: url("../../images/small1.jpg");
 	color: white;
 	text-shadow: 1px 1px black;
@@ -425,30 +426,30 @@ div.parallax-intro{
 }
 
 /*Section 3*/
-div.menu{
+section.menu{
 	padding: 10%;
 	color: white;
 	background-color: rgb(68, 51, 51);
 }
-div.menu .overview{
+section.menu .overview{
 	vertical-align: top;
 }
-div.menu .overview h3{
+section.menu .overview h3{
 	text-align: center;
 	font-size: 140%;
 }
-div.menu .overview h2{
+section.menu .overview header{
 	text-align: center;
 	font-size: 180%;
 }
-div.menu .overview p {
+section.menu .overview p {
 	line-height: 200%;
 }
-div.menu .overview .overview-list{
+section.menu .overview .overview-list{
 	margin-top: 40px;
 	margin-right: 20px;
 }
-div.menu .overview .overview-list a{
+section.menu .overview .overview-list a{
 	background-color: black;
     color: white;
     padding: 14px 25px;
@@ -462,24 +463,31 @@ div.menu .overview .overview-list a{
     justify-content: center;
 
 }
-div.menu .overview .overview-list a:hover{
+section.menu .overview .overview-list a:hover{
 	background-color: green;
 }
-div.menu .overview .overview-list a:active{
+section.menu .overview .overview-list a:active{
 	background-color: red;
 }
-div.menu .imageview {
+section.menu .imageview {
 	
 }
 
-div.menu .imageview .view-content{
+section.menu .imageview .view-content{
 
 }
-div.menu .imageview .view-content img{
+section.menu .imageview .view-content figure{
+	display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+section.menu .imageview .view-content img{
 	border: 1px solid white;
     border-radius: 5px;
 }
-div.menu .imageview .view-content .tag{
+section.menu .imageview .view-content .tag{
 	opacity: 0.5;
 	background-color: black;
 	width: 90%;
@@ -493,7 +501,7 @@ div.menu .imageview .view-content .tag{
 
 
 }
-div.menu .imageview .view-content .tag a{
+section.menu .imageview .view-content .tag a{
 	text-decoration: none;
 	color: white;
 	text-align: center;
@@ -535,11 +543,11 @@ div.menu .imageview .view-content .tag a{
 		margin-left: 15%;
 		width: 70%;
 	}
-	div.menu .imageview .view-content .tag{
+	section.menu .imageview .view-content .tag{
 		width: 70%;
 		margin-left: 15%;
 	}
-	div.menu .overview .overview-list{
+	section.menu .overview .overview-list{
 		margin-bottom: 20px;
     	margin-right: auto;
     	margin-left: auto;

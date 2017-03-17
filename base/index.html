@@ -14,8 +14,8 @@
 
 	<!-- Header -->
 
-	<div class="navigation">
-		<ul>
+	<header class="navigation">
+		<nav>
 			<div class="nav-list">
 				<li><a href="#first">About</a></li>
 				<li><a href="#menu">Menu</a></li>
@@ -24,18 +24,13 @@
 				<li><a href="#events">Events</a></li>
 				<li><a href="#contacts">Contacts</a></li>
 			</div>
-		</ul>
-		
+		</nav>		
+	</header>
+	<main class="content">
 
-	</div>
-	<div class="content">
-
-		<div class="welcome">
-			<div>
-				
-			</div>
+		<section class="welcome">
 			<div class="welcome-items">
-				<div class="hidden-list">
+				<nav class="hidden-list">
 					<div class="dropdown">
   						<button class="dropbtn">Dropdown</button>
   						<div class="dropdown-content">
@@ -45,44 +40,45 @@
     						<a href="#">Contacts</a>
   						</div>
 					</div>
-				</div>
+				</nav>
 				<p class="headline">LaPlace - Zurich</p>
 				<div class="book-button">
 					<a href="#book" class="book">Book a Table</a>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- First About-->
 
-
-		<div class="intro">
-			<h2>Welcome</h2>
-			<p>
+		<section>
+			<article class="intro">
+				<header>Welcome</header>
+				<p>
 				LaPlace Restaurant was founded in May of 2015. The cuisine we serve
 				is created with the utmost attention to details. Our emphasis is on
 				providing fresh, locally sourced, exquisite food. As such our menus
 				change on a regular basis, allowing us to offer you mouth watering,
-				perfectly prepared dishes.<br />
-		</div>
-
+				perfectly prepared dishes.<br /></details>
+			</p>
+		
 
 
 		<!-- Second About -->
 
 
-		<div class="intro intro-with-image">
-			<h2>High Quality Cuisine</h2>
+		<article class="intro intro-with-image">
+			<header>High Quality Cuisine</header>
 			<p>
 				Our cuisine is a melting pot of different cultures which have come
 				together to form a unique blend of flavours and techniques.<br />
-		</div>
+			</p>
+		</article>
 
 
 		<!-- Third About -->
 
 
-		<div class="intro">
-			<h2>Only the Best Ingredients</h2>
+		<article class="intro">
+			<header>Only the Best Ingredients</header>
 			<p>
 				It's vital to our operation to make sure everybody is aware of the
 				quality of the ingredients we use. As the choices we make in terms
@@ -91,103 +87,118 @@
 				it. That's why on our menus you find the origins of each of our
 				ingredients.<br />
 			</p>
-		</div>
-
+		</article>
+		</section>
 
 
 		<!-- Menu -->
 
 
-		<div class="menu">
+		<section class="menu">
 			<div>
 				<div class="menu-table" style="width:100%">
 					<div class="row">
-						<div class="overview col-5" width="36%">
+						<section class="overview col-5" width="36%">
 							<div >
-								<h2>Our Menu</h2>
+								<header>Our Menu</header>
 								<h3>Appetizers</h3>
 								<p>We serve a seasonal tasting menu that focuses on local
 									ingredients. Our appetizers may vary during the year to always
 									ensure the best quality. For the appetizers, we are famous for
 									our bruschettas that we serve in several different variants.</p>
-								<div class="overview-list">
+								<nav class="overview-list">
 									<a href="">Appetizers</a> 
 									<a href="">Fresh Pasta</a> 
 									<a href="">Meat-Fish</a> 
 									<a href="">Dessert</a>
-								</div>
+								</nav>
 
 							</div>
-						</div>
-						<div  class="imageview col-7" width="64%">
+						</section>
+						<section  class="imageview col-7" width="64%">
 							<div>
-								<div class="row">
-									<div width="50%" class="col-6">
+								<section class="row">
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a href="#"> <img width = "90%" height="90%"  src="images/pic01.jpg" alt="" />
+										<a href="#"> 
+											<figure>
+											<img width = "90%" height="90%"  src="images/pic01.jpg" alt="" />
+											</figure>
 										</a>
 										<div class="tag">
 											<a href="#"> Bruschette with Tomatoes </a>
 										</div>
 										</div>
-									</div>
-									<div width="50%" class="col-6">
+									</section>
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a href="#"> <img width="90%" height="90%"  src="images/pic02.jpg" alt="" />
+										<a href="#"><figure> <img width="90%" height="90%"  src="images/pic02.jpg" alt="" /></figure>
 										</a>
 										<div class="tag">
 											<a href="#"> Green Rolls </a>
 										</div>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div width="50%" class="col-6">
+									</section>
+								</section>
+								<section class="row">
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a href="#"> <img width= "90%" height="90%"  src="images/pic03.jpg" alt="" />
+										<a href="#">
+											<figure> 
+											<img width= "90%" height="90%"  src="images/pic03.jpg" alt="" />
+											</figure>
 										</a>
 										<div class="tag">
 											<a href="#"> Eggplants </a>
 										</div>
 										</div>
-									</div>
-									<div width="50%" class="col-6">
+									</section>
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a href="#"> <img width= "90%"  height="90%"  src="images/pic04.jpg" alt="" />
+										<a href="#">
+											<figure> 
+											<img width= "90%"  height="90%"  src="images/pic04.jpg" alt="" />
+											</figure>
 										</a>
 										<div class="tag">
 											<a href="#">Bruschette</a>
 										</div>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div width="50%" class="col-6">
+									</section>
+								</section>
+								<section class="row">
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a  href="#"> <img width = "90%" height="90%" src="images/pic05.jpg" alt="" />
+										<a  href="#">
+											<figure> 
+											<img width = "90%" height="90%" src="images/pic05.jpg" alt="" />
+											</figure>
 										</a>
 										<div class="tag">
 											<a href="#">Meatballs</a>
 										</div>
 										</div>
-									</div>
-									<div width="50%" class="col-6">
+									</section>
+									<section width="50%" class="col-6">
 										<div class="view-content">
-										<a href="#"> <img width="90%" height="90%"  src="images/pic06.jpg" alt="" />
+										<a href="#">
+											<figure> 
+											<img width="90%" height="90%"  src="images/pic06.jpg" alt="" />
+											</figure>
 										</a>
 										<div class="tag">
 											<a href="#"> Spicy Beans</a>
 										</div>
 										</div>
-									</div>
-								</div>
+									</section>
+								</section>
 								
 							</div>
-						</div>
+						</section>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 
 		<!-- Third -->
@@ -406,6 +417,6 @@
 				</div>
 			</div>	
 				
-	</div>
+	</main>
 	</body>
 </html>
