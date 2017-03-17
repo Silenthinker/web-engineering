@@ -558,6 +558,161 @@ section.menu .imageview .view-content .tag a{
 	}
 }
 
+/* Clearfix tech to contain floats */
+/*
+Usage: add class=group to container element that
+contains float elements
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
+
+/* Popup windows*/
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes popup {
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+/* Add animation (Standard syntax) */
+@keyframes popup {
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Display the modal when targeted */
+.modal:target {
+  display: table;
+  /*position: absolute;*/
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: popup; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: popup;
+  animation-duration: 0.5s;
+}
+
+.modal-content h2{
+  float: left;
+  font-size: 1em;
+  /*outline: 1px solid black;*/
+}
+
+.modal-content article {
+  /*outline: 1px solid black;*/
+  text-align: left;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  float: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  /*outline: 1px solid black;*/
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.modal article.container {
+  padding-right: 2em;
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.modal header {
+  font-size: 1em;
+}
+.modal h2 {
+	line-height: 0.8em;
+	color: rgba(0, 0, 0, 0.4);
+}
+.modal h2,a {
+	padding-top: 0.8em;
+	margin-bottom: 1em;
+}
+.modal figure {
+	width: 86%;
+	height: 12em;
+	margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.modal#bruschettetomato figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic01.jpg");
+}
+.modal#rolls figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic02.jpg");
+}
+.modal#eggplants figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic03.jpg");
+}
+.modal#bruschette figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic04.jpg");
+}
+.modal#meatballs figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic05.jpg");
+}
+.modal#beans figure {
+	/*outline: 1px solid black;*/
+	background: url("../../images/pic06.jpg");
+}
+/*********************/
+
 /* Events */
 div.event {
 	background-color: rgb(68, 51, 51);
