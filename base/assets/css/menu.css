@@ -603,6 +603,7 @@ contains float elements
 /* Display the modal when targeted */
 .modal:target {
   display: table;
+  z-index: 100; /*ensure tags and textarea below modal window*/
   /*position: absolute;*/
 }
 
@@ -682,34 +683,35 @@ contains float elements
 }
 .modal figure {
 	width: 86%;
-	height: 12em;
+	height: 14em;
 	margin: 0 auto;
 	background-size: cover;
 	background-repeat: no-repeat;
+	/*background-position: center center;*/
 }
 .modal#bruschettetomato figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic01.jpg");
+	background-image: url("../../images/pic01.jpg");
 }
 .modal#rolls figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic02.jpg");
+	background-image: url("../../images/pic02.jpg");
 }
 .modal#eggplants figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic03.jpg");
+	background-image: url("../../images/pic03.jpg");
 }
 .modal#bruschette figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic04.jpg");
+	background-image: url("../../images/pic04.jpg");
 }
 .modal#meatballs figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic05.jpg");
+	background-image: url("../../images/pic05.jpg");
 }
 .modal#beans figure {
 	/*outline: 1px solid black;*/
-	background: url("../../images/pic06.jpg");
+	background-image: url("../../images/pic06.jpg");
 }
 /*********************/
 
