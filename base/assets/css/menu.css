@@ -606,7 +606,6 @@ contains float elements
   z-index: 100; /*ensure tags and textarea below modal window*/
   /*position: absolute;*/
 }
-
 /* The modal box */
 .modal-dialog {
   display: table-cell;
@@ -716,7 +715,7 @@ contains float elements
 /*********************/
 
 /* Events */
-div.event {
+section.event {
 	background-color: rgb(68, 51, 51);
 	padding-bottom: 2em; 
 }
@@ -735,22 +734,22 @@ div.container img {
 	margin-bottom: 2em;
 }
 
-div.event div.container .cell h3 {
+section.event div.container .cell h3 {
 	margin: 0px;
 	font-size: 1.6em;
 }
 
-div.event div.container .cell h2 {
+section.event div.container .cell h2 {
 	font-size: 1.4em;
 }
 
-div.event div.container .cell p {
+section.event div.container .cell p {
 	font-size: 1em;
 	line-height: 160%;
 	color: #d5d5d5;
 }
 
-div.event div.container .cell p a{
+section.event div.container .cell p a{
 	color: white;
 	border-bottom: 1px dotted #ffffff;
 	text-decoration: none;
@@ -859,6 +858,7 @@ div.container div.button a {
 	margin-bottom: 40px;
 	line-height: 4em;
 	background-color: black;
+	padding-top: 0;
 	border: 1px solid white;
 }
 
@@ -950,7 +950,7 @@ div.contact-us ul {
 	}
 }
 /* Book a table*/
-div.container.book-table {
+section.container.book-table {
 	clear: both;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -959,7 +959,10 @@ div.container.book-table {
 	/*outline: 1px solid black;*/
 }
 
-div.container.book-table .intro {
+section.container.book-table header {
+	color: white;
+}
+section.container.book-table .intro {
 	font-size: 80%;
 	text-shadow: 2px 2px 2px #000000;
 	width: 40%;
@@ -969,29 +972,29 @@ div.container.book-table .intro {
 	margin-right: auto;
 }
 
-div.container.book-table .container {
+section.container.book-table .container {
 	width: 90%;
 }
-div.container.book-table input {
+section.container.book-table input {
 	margin-bottom: 1em;
 	width: 96%;
 	height: 3em;
 	font-size: 120%;
 	padding-left: 1em;
 }
-div.container.book-table input[placeholder="Name"] {
+section.container.book-table input[placeholder="Name"] {
 	float: left;
 }
-div.container.book-table input[placeholder="Phone"] {
+section.container.book-table input[placeholder="Phone"] {
 	float: right;
 }
-div.container.book-table input[placeholder="Date"] {
+section.container.book-table input[placeholder="Date"] {
 	float: left;
 }
-div.container.book-table input[placeholder="Time"] {
+section.container.book-table input[placeholder="Time"] {
 	float: right;
 }
-div.container.book-table textarea {
+section.container.book-table textarea {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -999,7 +1002,7 @@ div.container.book-table textarea {
 	padding: 1em;
 	font-size: 120%;
 }
-div.container.book-table .button {
+section.container.book-table .button {
 	clear: both;
 	display: block;
 	position: relative;
@@ -1026,10 +1029,10 @@ div#book input[type="submit"]{
 }
 @media screen and (max-width: 767px) {
 
-	div.container div.button a {
+	section.container div.button a {
 		width: 30%;
 	}
-	div.container.book-table input {
+	section.container.book-table input {
 		width: 70%;
 		display: block;
 		margin-left: auto;
@@ -1037,37 +1040,37 @@ div#book input[type="submit"]{
 		height: 2em;
 		margin-bottom: 0.5em;
 	}
-	div.container.book-table textarea {
+	section.container.book-table textarea {
 		display: block;
 		width: 70%;
 		padding: 0.5em;
 	}
-	div.container.book-table input[placeholder="Name"] {
+	section.container.book-table input[placeholder="Name"] {
 		float: none;
 	}
-	div.container.book-table input[placeholder="Phone"] {
+	section.container.book-table input[placeholder="Phone"] {
 		float: none;
 	}
-	div.container.book-table input[placeholder="Date"] {
+	section.container.book-table input[placeholder="Date"] {
 		float: none;
 	}
-	div.container.book-table input[placeholder="Time"] {
+	section.container.book-table input[placeholder="Time"] {
 		float: none;
 	}
 }
 @media screen and (max-width: 767px) {
-	div.container.book-table .intro{
+	section.container.book-table .intro{
 		width: 60%
 	}
-	div.container.book-table input{
+	section.container.book-table input{
 		height: 2em
 	}
-	div.container.book-table .button{
+	section.container.book-table .button{
 		height: 3em;
 		margin-top: 3em;
 		bottom: 1em;
 	}
-	div.container.book-table textarea {
+	section.container.book-table textarea {
 		height: 8em;
 	}
 }	
@@ -1080,48 +1083,48 @@ div#book input[type="submit"]{
 		width: 100%;
 		margin-bottom:2em;
 	}
-	div.container.book-table .intro{
+	section.container.book-table .intro{
 		width: 80%
 	}
-	div.container.book-table .button{
+	section.container.book-table .button{
 		height: 2em;
 		margin-top: 2em;
 	}
-	div.container.book-table textarea {
+	section.container.book-table textarea {
 		height: 6em
 	}
-	div.container div.button a {
+	section.container div.button a {
 		width:40%;
 	}
 }
 /*Time and contact*/
-div.time-contact{
+section.time-contact{
 	background-color: #f0f0f0;
 	margin-top: 0px;
 	padding-top: 0px;
 	/*outline: 1px solid black;*/
 }
-div.time-contact b{
+section.time-contact b{
 	font-weight: 600;
 }
-div.time-contact .table {
+section.time-contact .table {
 	width: 50%;
 }
-div.time-contact .cell {
+section.time-contact .cell {
 	text-align: center;
 }
-div.time-contact .cell h2 {
+section.time-contact .cell h2 {
 	padding-top: 4em;
 	padding-bottom: 2em;
 	font-size: 1.2em;
 	font-weight: 100;
 }
-div.time-contact .cell p {
+section.time-contact .cell p {
 	clear: both;
 	margin: 1em auto;
 }
 /*Copyright*/
-div#copyright {
+footer#copyright {
 	clear: both;
 	margin: auto;
 	padding-top: 5em;
@@ -1130,15 +1133,15 @@ div#copyright {
 	width: 80%;
 	/*outline: 1px solid black;*/
 }
-div#copyright ul li {
+footer#copyright ul li {
 	display: inline;
 }
-div#copyright ul {
+footer#copyright ul {
     text-align: center;
     font-size: 1em;
     padding-left: 0em;
 }
-div#copyright li:not(:first-child):before {
+footer#copyright li:not(:first-child):before {
 	content: "|";
 	padding: 2em;
 }
@@ -1146,10 +1149,10 @@ div#copyright li:not(:first-child):before {
 
 }*/
 @media screen and (max-width: 767px) {
-	div#copyright ul li {
+	footer#copyright ul li {
 		display: block;
 	}
-	div#copyright li:not(:first-child):before {
+	footer#copyright li:not(:first-child):before {
 		content: none;
 		padding: 0em;
 	}
