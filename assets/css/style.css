@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	text-shadow: 2px 2px 2px #ffffff;
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+p {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Contact */
+
+div#contact {
+	width: 70%;
+	margin: auto;
+}
+
+div#contactus p{
+	font-size: 12px;
+}
+
+div#contact input {
+	width: 49%;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #fafafa;
+	padding: 10px;
+	border: none;
+}
+
+div#contact input[placeholder="Name"] {
+	float: left;
+}
+
+div#contact input[placeholder="Email"] {
+	float: right;
+}
+
+div#contact textarea {
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	background-color: #fafafa;
+	border: none;
+}
+div#contact-button {
+	margin: auto;
+	width: 60%;
+}
+
+div#contact-button input{
+	height: 35px;
+}
+
+div#contact-button input[type="submit"] {
+	background-color: black;
+	color: white;
+	float: left;
+	width: 55%;
+}
+
+div#contact-button input[type="reset"] {
+	float: right;
+	width: 40%;
+}
+
+/* Book a table*/
+div#booktable-background {
+	clear: both;
+	margin-bottom: 0px;
+	background: url("images/book-table.jpg") no-repeat center / cover;
+	/*outline: 1px solid black;*/
+}
+
+div#booktable {
+	width: 40%;
+	margin: auto;
+	margin-bottom: 0px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+div#booktable > h2 {
+	color: white;
+	font-size: 20px;
+	padding: 16px;
+	margin-bottom: 0px;
+	/*outline: 1px solid white;*/
+}
+
+div#book {
+	width: 90%;
+	margin: auto;
+	/*outline: 1px solid white;*/
+}
+
+div#book input[type="text"] {
+	width: 48%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 6px;
+	border: none;
+}
+
+div#book input[placeholder="Name"], input[placeholder="Date"] {
+	float: left;
+}
+
+div#book input[placeholder="Phone"], input[placeholder="Time"] {
+	float: right;
+}
+
+div#book textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: none;
+	clear: both;
+}
+
+div#book input[type="submit" ]{ 
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	background-color: rgba(80,80,80,0.8);
+	color: white;
+	width: 30%;
+	display: block;
+	padding: 8px;
+	/*outline: 1px solid white;*/
+}
+
+div#time-contact, div#contacts, div#time {
+	background-color: #fafafa;
+	outline: 1px solid black;
+}
+
+div#time {
+	float: left;
+}
+
+div#contacts {
+	float: right;
+}
+
+div#copyright {
+	clear: both;
+	margin: auto;
+	width: 80%;
+	outline: 1px solid black;
+}
+
+div#copyright ul li {
+	display: inline;
+}
+
+div#copyright ul {
+    text-align: center;
+    font-size: 80%;
+}
+
+div#copyright li:not(:first-child):before {
+	content: "|";
+	padding: 8px;
+}
+

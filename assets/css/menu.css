@@ -190,7 +190,7 @@ body{
     width: 100%;
   }
 }
-header.navigation{
+div.navigation{
    position: fixed;
    left: 50%;
    transform: translate(-50%, 0%);
@@ -201,24 +201,24 @@ header.navigation{
    top: -80px;
    z-index: 2;
 }
-header.navigation nav{
+div.navigation ul{
 	list-style-type: none;
     text-align: center;
     padding: 0px;
     zoom:1;
     
 }
-div.welcome-items nav.hidden-list{
+div.welcome-items div.hidden-list{
 	display: none;
 }
-header.navigation .nav-list li{
+div.navigation .nav-list li{
 	padding: 2px;
     width: 19%;
     display: inline-block;
     margin-top: 0px;
 }
 
-header.navigation .nav-list li a {
+div.navigation .nav-list li a {
 	font-family: serif;
 	font-size: 200%;
 	text-decoration: none;
@@ -226,17 +226,16 @@ header.navigation .nav-list li a {
 
 }
 
-header.navigation .nav-list li.logo{
+div.navigation .nav-list li.logo{
 	position:relative;
 	top: 10px;
 }
-header.navigation .nav-list li.logo img{
+div.navigation .nav-list li.logo img{
 	width: 120px;
 	height: 120px;
 	position: relative;
 	top: 70px;
 }
-
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -291,19 +290,19 @@ header.navigation .nav-list li.logo img{
 	width: auto;
 	height: auto;
   }
-  div.welcome-items nav.hidden-list{
+  div.welcome-items div.hidden-list{
 	 display: block;
 	 position: fixed;
 	 top: 0px;
 	 z-index: 11
   }
-  div.welcome-items nav.hidden-list a:hover{
+  div.welcome-items div.hidden-list a:hover{
 	background-color: green;
 	}
-	div.welcome-items nav.hidden-list a:active{
+	div.welcome-items div.hidden-list a:active{
 		background-color: red;
 	}
-  div.welcome-items nav.hidden-list a{
+  div.welcome-items div.hidden-list a{
   	display: block;
   	background-color: black;
     color: white;
@@ -319,9 +318,8 @@ header.navigation .nav-list li.logo img{
   }
   
 }
-section.welcome{
+div.welcome{
 	background-image: url("../../images/header.jpg");
-
 	background-size:100% 100%;
 	/*padding-bottom: 2em;*/
 	height: 650px;
@@ -332,43 +330,43 @@ section.welcome{
     width: 100%;
 }
 @media screen and (min-width: 1024px) {
-	section.welcome{
+	div.welcome{
 		height: 650px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-	section.welcome{
+	div.welcome{
 		height: 500px;
 	}
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	
-	section.welcome{
+	div.welcome{
 		height: 400px;
 	}
 
 }
 @media screen and (max-width: 479px) {
-	section.welcome{
+	div.welcome{
 		height: 200px;
 	}
 }
-section.welcome .welcome-items{
+div.welcome .welcome-items{
 	align-self: center;
 	width: 100%;
 	
 }
-section.welcome .headline{
+div.welcome .headline{
 	color: white;
 	text-align: center;
    	background-color: black;
     font-size: 500%;
 }
-section.welcome .book-button{
+div.welcome .book-button{
 	display: flex;
 	justify-content:center;
 }
-section.welcome .book-button .book{
+div.welcome .book-button .book{
 	/*height: 60px;
 	width: 14%;*/
 	opacity: 0.5;
@@ -389,13 +387,13 @@ section.welcome .book-button .book{
     font-size: 120%;
 }
 /*Section 2*/
-main.content{
+div.content{
 	margin-top: 70px;
 }
-article.intro{
+div.intro{
 	width: 100%;
 }
-article.intro header{
+div.intro h2{
 	padding-top: 2em;
 	padding-bottom: 1em;
 	width: 100%;
@@ -403,7 +401,7 @@ article.intro header{
 	font-size: 200%;
 	font-weight: 100;
 }
-article.intro p{
+div.intro p{
 	width: 78%;
 	text-align: center;
 	margin-right: 12%;
@@ -412,7 +410,7 @@ article.intro p{
 	font-size: 120%;
 	line-height: 150%;
 }
-article.intro-with-image{
+div.intro-with-image{
 	background-image: url("../../images/small1.jpg");
 	color: white;
 	text-shadow: 1px 1px black;
@@ -427,31 +425,30 @@ div.parallax-intro{
 }
 
 /*Section 3*/
-section.menu{
+div.menu{
 	padding: 10%;
 	color: white;
 	background-color: rgb(68, 51, 51);
-	
 }
-section.menu .overview{
+div.menu .overview{
 	vertical-align: top;
 }
-section.menu .overview h3{
+div.menu .overview h3{
 	text-align: center;
 	font-size: 140%;
 }
-section.menu .overview header{
+div.menu .overview h2{
 	text-align: center;
 	font-size: 180%;
 }
-section.menu .overview p {
+div.menu .overview p {
 	line-height: 200%;
 }
-section.menu .overview .overview-list{
+div.menu .overview .overview-list{
 	margin-top: 40px;
 	margin-right: 20px;
 }
-section.menu .overview .overview-list a{
+div.menu .overview .overview-list a{
 	background-color: black;
     color: white;
     padding: 14px 25px;
@@ -465,69 +462,44 @@ section.menu .overview .overview-list a{
     justify-content: center;
 
 }
-section.menu .overview .overview-list a:hover{
+div.menu .overview .overview-list a:hover{
 	background-color: green;
 }
-section.menu .overview .overview-list a:active{
+div.menu .overview .overview-list a:active{
 	background-color: red;
 }
-section.menu .imageview {
+div.menu .imageview {
 	
 }
 
-section.menu .imageview .view-content{
-	height: 200px;
-	border: 1px solid white;
-	border-radius: 5px;
-	margin: 5%;
-}
+div.menu .imageview .view-content{
 
-section.menu .imageview .view-content img{
+}
+div.menu .imageview .view-content img{
 	border: 1px solid white;
     border-radius: 5px;
-   
 }
-section.menu .imageview .view-content .tag:hover{
-	
-	padding-top: 30%;
-	height: 100%;
-	top:0px;
-	text-align: center;
-	background: linear-gradient(to bottom, rgba(255,100,100,1),rgba(0,0,0,0));
-	
-	border-top: 10px solid rgba(255,100,100,1);
-
-	
-}
-section.menu .imageview .view-content .tag{
+div.menu .imageview .view-content .tag{
 	opacity: 0.5;
-	background: black;
-	width: 100%;
+	background-color: black;
+	width: 90%;
 	text-align: left;
-  padding-left: 5%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	height: 20%;
-	transition: padding-top .5s, height .5s,top .5s,background .5s,padding-left .5s;
-	transition-timing-function: ease-out;
 	position: relative;
-	top: 140px;
+	top: -75px;
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: center;
+
+
+
 }
-section.menu .imageview .view-content .tag a{
+div.menu .imageview .view-content .tag a{
 	text-decoration: none;
 	color: white;
+	text-align: center;
 	font-size: 115%;
 	text-decoration: none;
-	transition:  top 1s;
-	transition-timing-function: ease-in;
-	position:relative;
-	bottom: 2px;
-	text-align: center;
-	
-}
-
-section.menu .imageview .view-content .tag a:hover{
-	
+	border-bottom: 1px dashed #999
 }
 
 /*meida query stuff*/
@@ -559,219 +531,25 @@ section.menu .imageview .view-content .tag a:hover{
 		float:none;
     	width: 100%;
 	}
-	section.menu .imageview .view-content{
-		width: 60%;
-		margin-left: 20%;
-		margin-right: 15%;
-	}
 	.view-content img{
 		margin-left: 15%;
 		width: 70%;
 	}
-	section.menu .imageview .view-content .tag{
-		
+	div.menu .imageview .view-content .tag{
+		width: 70%;
+		margin-left: 15%;
 	}
-	section.menu .overview .overview-list{
+	div.menu .overview .overview-list{
 		margin-bottom: 20px;
-    	margin-right: auto;
-    	margin-left: auto;
-    	width: 90%;
+		margin-right: 0px;
 	}
 	*{
 		font-size: 90%;
 	}
 }
 
-.card.special{
-	 transform-style: preserve-3d;
-	 transition: transform 3s ease-out;
-	 width: 100%;
-  	height: 100%;
-}
-.card{
-	 transform-style: preserve-3d;
-	 transition: transform 3s ease-out;
-	 width: 50%;
-  	 height: 100%;
-}
-.face {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.face.back {
-  display: block;
-  transform: rotateY(180deg);
-   display: none;
-}
-.tag:hover .card{
-	transform: rotateY(360deg);
-	width: 100%;
-}
-.tag:hover .back{
-	display: none;
-}
-
-
-/* Clearfix tech to contain floats */
-/*
-Usage: add class=group to container element that
-contains float elements
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  *zoom: 1;
-}
-
-/* Popup windows*/
-/* Add animation (Chrome, Safari, Opera) */
-@-webkit-keyframes popup {
-  0% {opacity: 0;}
-  25% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-/* Add animation (Standard syntax) */
-@keyframes popup {
-  0% {opacity: 0;}
-  25% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-/* The modal's background */
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Display the modal when targeted */
-.modal:target {
-  display: table;
-  z-index: 100; /*ensure tags and textarea below modal window*/
-  /*position: absolute;*/
-}
-/* The modal box */
-.modal-dialog {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* The modal's content */
-.modal-dialog .modal-content {
-  margin: auto;
-  background-color: #f3f3f3;
-  position: relative;
-  padding: 0;
-  outline: 0;
-  border: 1px #777 solid;
-  text-align: justify;
-  width: 33%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  /* Add animation */
-  -webkit-animation-name: popup; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-  animation-name: popup;
-  animation-duration: 0.5s;
-}
-
-.modal-content h2{
-  float: left;
-  font-size: 1em;
-  /*outline: 1px solid black;*/
-}
-
-.modal-content article {
-  /*outline: 1px solid black;*/
-  text-align: left;
-}
-
-/* The button used to close the modal */
-.closebtn {
-  text-decoration: none;
-  border-bottom: 1px dotted black;
-  float: right;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: black;
-  /*outline: 1px solid black;*/
-}
-
-.closebtn:hover,
-.closebtn:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.modal article.container {
-  padding-right: 2em;
-  line-height: 1.6em;
-  color: rgba(0, 0, 0, 0.8);
-}
-.modal header {
-  font-size: 1em;
-}
-.modal h2 {
-	line-height: 0.8em;
-	color: rgba(0, 0, 0, 0.4);
-}
-.modal h2,a {
-	padding-top: 0.8em;
-	margin-bottom: 1em;
-}
-.modal figure {
-	width: 86%;
-	height: 14em;
-	margin: 0 auto;
-	background-size: cover;
-	background-repeat: no-repeat;
-	/*background-position: center center;*/
-}
-.modal#bruschettetomato figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic01.jpg");
-}
-.modal#rolls figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic02.jpg");
-}
-.modal#eggplants figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic03.jpg");
-}
-.modal#bruschette figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic04.jpg");
-}
-.modal#meatballs figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic05.jpg");
-}
-.modal#beans figure {
-	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic06.jpg");
-}
-/*********************/
-
-
 /* Events */
-section.event {
+div.event {
 	background-color: rgb(68, 51, 51);
 	padding-bottom: 2em; 
 }
@@ -790,22 +568,22 @@ div.container img {
 	margin-bottom: 2em;
 }
 
-section.event div.container .cell h3 {
+div.event div.container .cell h3 {
 	margin: 0px;
 	font-size: 1.6em;
 }
 
-section.event div.container .cell h2 {
+div.event div.container .cell h2 {
 	font-size: 1.4em;
 }
 
-section.event div.container .cell p {
+div.event div.container .cell p {
 	font-size: 1em;
 	line-height: 160%;
 	color: #d5d5d5;
 }
 
-section.event div.container .cell p a{
+div.event div.container .cell p a{
 	color: white;
 	border-bottom: 1px dotted #ffffff;
 	text-decoration: none;
@@ -834,11 +612,10 @@ div.container a {
 .flex-container {
 	display: flex;
 	flex-flow: row wrap;
-	align-items: flex-start;
 }
 
 .flex-item {
-	margin: 0 auto;
+	margin: auto;
 }
 
 div.upcoming-events .flex-item {
@@ -914,7 +691,6 @@ div.container div.button a {
 	margin-bottom: 40px;
 	line-height: 4em;
 	background-color: black;
-	padding-top: 0;
 	border: 1px solid white;
 }
 
@@ -1001,12 +777,9 @@ div.contact-us ul {
 		width: 100%;
 		margin-top: 1em;
 	}
-	div.container.contact-us .table .input {
-		width: 100%;
-	}
 }
 /* Book a table*/
-section.container.book-table {
+div.container.book-table {
 	clear: both;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -1014,11 +787,7 @@ section.container.book-table {
 	background-size: 100% 100%;
 	/*outline: 1px solid black;*/
 }
-
-section.container.book-table header {
-	color: white;
-}
-section.container.book-table .intro {
+div.container.book-table .intro {
 	font-size: 80%;
 	text-shadow: 2px 2px 2px #000000;
 	width: 40%;
@@ -1027,30 +796,29 @@ section.container.book-table .intro {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-section.container.book-table .container {
+div.container.book-table .container {
 	width: 90%;
 }
-section.container.book-table input {
+div.container.book-table input {
 	margin-bottom: 1em;
 	width: 96%;
 	height: 3em;
 	font-size: 120%;
 	padding-left: 1em;
 }
-section.container.book-table input[placeholder="Name"] {
+div.container.book-table input[placeholder="Name"] {
 	float: left;
 }
-section.container.book-table input[placeholder="Phone"] {
+div.container.book-table input[placeholder="Phone"] {
 	float: right;
 }
-section.container.book-table input[placeholder="Date"] {
+div.container.book-table input[placeholder="Date"] {
 	float: left;
 }
-section.container.book-table input[placeholder="Time"] {
+div.container.book-table input[placeholder="Time"] {
 	float: right;
 }
-section.container.book-table textarea {
+div.container.book-table textarea {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -1058,7 +826,7 @@ section.container.book-table textarea {
 	padding: 1em;
 	font-size: 120%;
 }
-section.container.book-table .button {
+div.container.book-table .button {
 	clear: both;
 	display: block;
 	position: relative;
@@ -1084,103 +852,57 @@ div#book input[type="submit"]{
 	/*outline: 1px solid white;*/
 }
 @media screen and (max-width: 767px) {
-
-	section.container div.button a {
-		width: 30%;
-	}
-	section.container.book-table input {
+	div.container.book-table input {
 		width: 70%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		height: 2em;
-		margin-bottom: 0.5em;
 	}
-	section.container.book-table textarea {
+	div.container.book-table textarea {
 		display: block;
 		width: 70%;
-		padding: 0.5em;
 	}
-	section.container.book-table input[placeholder="Name"] {
+	div.container.book-table input[placeholder="Name"] {
 		float: none;
 	}
-	section.container.book-table input[placeholder="Phone"] {
+	div.container.book-table input[placeholder="Phone"] {
 		float: none;
 	}
-	section.container.book-table input[placeholder="Date"] {
+	div.container.book-table input[placeholder="Date"] {
 		float: none;
 	}
-	section.container.book-table input[placeholder="Time"] {
+	div.container.book-table input[placeholder="Time"] {
 		float: none;
-	}
-}
-@media screen and (max-width: 767px) {
-	section.container.book-table .intro{
-		width: 60%
-	}
-	section.container.book-table input{
-		height: 2em
-	}
-	section.container.book-table .button{
-		height: 3em;
-		margin-top: 3em;
-		bottom: 1em;
-	}
-	section.container.book-table textarea {
-		height: 8em;
-	}
-}	
-@media screen and (max-width: 479px) {
-	div.contact-us .button[type="submit"]{
-		width: 100%;
-		margin-bottom:2em;
-	}
-	div.contact-us .button[type="reset"]{
-		width: 100%;
-		margin-bottom:2em;
-	}
-	section.container.book-table .intro{
-		width: 80%
-	}
-	section.container.book-table .button{
-		height: 2em;
-		margin-top: 2em;
-	}
-	section.container.book-table textarea {
-		height: 6em
-	}
-	section.container div.button a {
-		width:40%;
 	}
 }
 /*Time and contact*/
-section.time-contact{
+div.time-contact{
 	background-color: #f0f0f0;
 	margin-top: 0px;
 	padding-top: 0px;
 	/*outline: 1px solid black;*/
 }
-section.time-contact b{
+div.time-contact b{
 	font-weight: 600;
 }
-section.time-contact .table {
+div.time-contact .table {
 	width: 50%;
 }
-section.time-contact .cell {
+div.time-contact .cell {
 	text-align: center;
 }
-section.time-contact .cell h2 {
+div.time-contact .cell h2 {
 	padding-top: 4em;
 	padding-bottom: 2em;
 	font-size: 1.2em;
 	font-weight: 100;
 }
-section.time-contact .cell p {
+div.time-contact .cell p {
 	clear: both;
 	margin: 1em auto;
 }
 /*Copyright*/
-footer#copyright {
+div#copyright {
 	clear: both;
 	margin: auto;
 	padding-top: 5em;
@@ -1189,15 +911,15 @@ footer#copyright {
 	width: 80%;
 	/*outline: 1px solid black;*/
 }
-footer#copyright ul li {
+div#copyright ul li {
 	display: inline;
 }
-footer#copyright ul {
+div#copyright ul {
     text-align: center;
     font-size: 1em;
     padding-left: 0em;
 }
-footer#copyright li:not(:first-child):before {
+div#copyright li:not(:first-child):before {
 	content: "|";
 	padding: 2em;
 }
@@ -1205,10 +927,10 @@ footer#copyright li:not(:first-child):before {
 
 }*/
 @media screen and (max-width: 767px) {
-	footer#copyright ul li {
+	div#copyright ul li {
 		display: block;
 	}
-	footer#copyright li:not(:first-child):before {
+	div#copyright li:not(:first-child):before {
 		content: none;
 		padding: 0em;
 	}
