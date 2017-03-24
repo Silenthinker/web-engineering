@@ -465,14 +465,16 @@ section.menu .overview .overview-list a{
     justify-content: center;
 
 }
+/*
 section.menu .overview .overview-list a:hover{
 	background-color: green;
 }
 section.menu .overview .overview-list a:active{
 	background-color: red;
 }
-section.menu .imageview {
-	
+*/
+section.menu .overview .overview-list a {
+  
 }
 
 section.menu .imageview .view-content{
