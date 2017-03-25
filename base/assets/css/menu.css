@@ -566,6 +566,8 @@ section.menu .imageview .view-content .tag a:hover{
 		width: 60%;
 		margin-left: 20%;
 		margin-right: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	.view-content img{
 		margin-left: 15%;
@@ -632,8 +634,6 @@ contains float elements
 .group {
   *zoom: 1;
 }
-
-.noscroll { position: fixed; overflow-y:scroll }
 
 /* Popup windows*/
 /* Add animation (Chrome, Safari, Opera) */
