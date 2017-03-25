@@ -748,29 +748,29 @@ contains float elements
 	background-repeat: no-repeat;
 	/*background-position: center center;*/
 }
-.modal#bruschettetomato figure {
+section > .modal:nth-child(1) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic01.jpg");
+	background-image: url("../../images/appetizer-0.jpg");
 }
-.modal#rolls figure {
+section > .modal:nth-child(2) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic02.jpg");
+	background-image: url("../../images/appetizer-1.jpg");
 }
-.modal#eggplants figure {
+section > .modal:nth-child(3) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic03.jpg");
+	background-image: url("../../images/appetizer-2.jpg");
 }
-.modal#bruschette figure {
+section > .modal:nth-child(4) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic04.jpg");
+	background-image: url("../../images/appetizer-3.jpg");
 }
-.modal#meatballs figure {
+section > .modal:nth-child(5) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic05.jpg");
+	background-image: url("../../images/appetizer-4.jpg");
 }
-.modal#beans figure {
+section > .modal:nth-child(6) figure {
 	/*outline: 1px solid black;*/
-	background-image: url("../../images/pic06.jpg");
+	background-image: url("../../images/appetizer-5.jpg");
 }
 /*********************/
 
