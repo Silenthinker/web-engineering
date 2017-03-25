@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes popup {
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes close {
+  0% {opacity: 1;}
+  75% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+/* Add animation (Standard syntax) */
+@keyframes popup {
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+@keyframes close {
+  0% {opacity: 1;}
+  75% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+/* Clearfix tech to contain floats */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
+
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Display the modal when targeted */
+.modal:target {
+  display: table;
+  /*position: absolute;*/
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: popup; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: popup;
+  animation-duration: 0.5s;
+}
+
+.modal-content h2{
+  float: left;
+  font-size: 1em;
+  outline: 1px solid black;
+}
+
+.modal-content article {
+  outline: 1px solid black;
+  text-align: left;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  outline: 1px solid black;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+article.container {
+  padding-right: 2em;
+}
+header {
+  font-size: 1em;
+}
+
+header h2, a {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+div#block {
+  height: 1000px;
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<p> This is top</p>
+<div id="block"></div>
+<a href="#id01">Open Modal</a>
+
+
+<div id="id01" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <header class="container group"> 
+        <h2>Menu</h2><a href="#modal" class="closebtn">×</a>
+      </header>
+      <div class="container">
+        <p>img</p>
+      </div>
+      <article class="container">
+        <p>Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and topped with olive oil and salt. Variations may include toppings of tomato, vegetables, beans, cured meat, or cheese.</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
