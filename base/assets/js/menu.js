@@ -16,23 +16,23 @@ function getIndexOfSubsection(elem, k) {
 }
 
 $(document).ready(function(){
-	$(window).scroll(function(){
-		// dynamic menu highlight
-		var k = 10; // divide menu section to k slices
-		var idx = getIndexOfSubsection($('section.menu'), k);
-		if (!(idx > (k-4)/2 && idx < (k+4)/2+1)) return;
-		idx = idx - (k-4)/2;
-	    $('.overview-list > a:nth-child(' + idx + ')').css("background-color", "green");
-	    $('.overview-list > a:not(.overview-list > a:nth-child(' + idx + '))').css("background-color", "black");
-	    
-	    // update images and titles
-	    var menuTypes = ['appetizer', 'pasta', 'meat', 'dessert'];
+	var menuTypes = ['appetizer', 'pasta', 'meat', 'dessert'];
 	    var menuNames = [
 	    ['Bruschette with Tomatoes', 'Green Rolls', 'Eggplants', 'Bruschette', 'Meatballs', 'Spicy Beans'],
 	    ['Carls Pasta', 'Italian Pasta', 'Semolina Pasta', 'Pasta con Broccoli', 'Crawfish Pasta', 'Taco Pasta'],
 	    ['Duck Confit', 'Baked Fish', 'Steak', 'Crawfish', 'Veggie Beef', 'Chicken'],
 	    ['Tiramisu', 'Cheesecake', 'Cannoli', 'Ice Cream', 'Mille-feuille', 'Mafia'],
 	    ];
+	$(window).scroll(function(){
+		// dynamic menu highlight
+		var k = 10; // divide menu section to k slices
+		var idx = getIndexOfSubsection($('section.menu'), k);
+		if (!(idx > (k-4)/2 && idx < (k+4)/2+1)) return;
+		idx = idx - (k-4)/2;
+	    $('.overview-list > a:nth-child(' + idx + ')').css("background-color", "green").data("focused", 'true');
+	    $('.overview-list > a:not(.overview-list > a:nth-child(' + idx + '))').css("background-color", "black").data("focused", "false");
+	    // update images and titles
+	    
 	    for (var i = 0; i < 6; i++) {
 	    	var row = Math.floor(i / 2) + 1;
 	    	var col = i % 2 + 1;
@@ -56,4 +56,46 @@ $(document).ready(function(){
 		$('body').css({'position': 'static'});
 		$(window).scrollTop(scrollTop);
 	});
+
+	// highlight menu when hover
+	function changeImgText(idx) {
+		for (var k = 0; k < 6; k++) {
+	    	var row = Math.floor(k / 2) + 1;
+	    	var col = k % 2 + 1;
+	    	var imageName = menuTypes[idx-1] + '-' + k + '.jpg';
+	    	var viewContent = '.imageview > section.row:nth-child(' + row + ') > section:nth-of-type(' + col + ') > .view-content';
+		    $(viewContent).css('background-image', 'url(../../images/'+ imageName);
+		    $(viewContent + ' a').text(menuNames[idx-1][k]);	
+		}
+	}
+
+	$('.overview-list > a').hover(
+		function () {
+			$(this).css("background-color", "green");
+			var idx;
+			for (var j = 1; j < 5; j++) {
+				if ($(this).attr("alt") == menuTypes[j-1]) {
+					idx = j;
+				}
+			}
+			changeImgText(idx);
+		},
+		function () {
+			if ($(this).data("focused") == 'false') {
+				$(this).css("background-color", "black");
+				for (var i = 1; i < 5; i++) {
+					var item = $('.overview-list > a:nth-child(' + i + ')'), focusedItem;
+					if (item.data("focused") == "true") {
+						focusedItem = item;
+					}
+				}
+				for (var j = 1; j < 5; j++) {
+					if (focusedItem.attr("alt") == menuTypes[j-1]) {
+						idx = j;
+					}
+				}
+				changeImgText(idx);
+			}
+		}
+	)
 });
