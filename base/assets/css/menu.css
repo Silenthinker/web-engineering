@@ -633,6 +633,8 @@ contains float elements
   *zoom: 1;
 }
 
+.noscroll { position: fixed; overflow-y:scroll }
+
 /* Popup windows*/
 /* Add animation (Chrome, Safari, Opera) */
 @-webkit-keyframes popup {
