@@ -45,18 +45,7 @@ $(document).ready(function(){
 		    $('section > .modal:nth-child(' + j + ') h2').text(menuNames[idx-1][i]);
 	    }
 	});
-	// disable scrolling in case of popup
-	var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-	var scrollTop;
-	$('.front > a').click(function () {
-		scrollTop = $(scrollElem).scrollTop();
-		$('body').css({'position': 'fixed'}).css({top: -1*scrollTop});
-	});
-	$('.popup .closebtn').click(function () {
-		$('body').css({'position': 'static'});
-		$(window).scrollTop(scrollTop);
-	});
-
+	
 	// highlight menu when hover
 	function changeImgText(idx) {
 		for (var k = 0; k < 6; k++) {
@@ -98,4 +87,24 @@ $(document).ready(function(){
 			}
 		}
 	)
+	// disable scrolling in case of popup
+	
+	var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+	var scrollTop;
+	/*
+	$('.front > a').click(function () {
+		scrollTop = $(scrollElem).scrollTop();
+		$('body').css({'position': 'fixed'}).css({top: -1*scrollTop});
+	});
+	*/
+	// make div.view-content clickable
+	$('div.view-content').on('click', function() {
+		scrollTop = $(scrollElem).scrollTop();
+		$('body').css({'position': 'fixed'}).css({top: -1*scrollTop});
+		window.location = $(this).find(".front > a").attr("href"); 
+	});
+	$('.popup .closebtn').click(function () {
+		$('body').css({'position': 'static'});
+		$(window).scrollTop(scrollTop);
+	});
 });
