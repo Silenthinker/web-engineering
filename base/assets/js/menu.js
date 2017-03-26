@@ -17,22 +17,22 @@ function getIndexOfSubsection(elem, k) {
 
 $(document).ready(function(){
 	var menuTypes = ['appetizer', 'pasta', 'meat', 'dessert'];
-	    var menuNames = [
-	    ['Bruschette with Tomatoes', 'Green Rolls', 'Eggplants', 'Bruschette', 'Meatballs', 'Spicy Beans'],
-	    ['Carls Pasta', 'Italian Pasta', 'Semolina Pasta', 'Pasta con Broccoli', 'Crawfish Pasta', 'Taco Pasta'],
-	    ['Duck Confit', 'Baked Fish', 'Steak', 'Crawfish', 'Veggie Beef', 'Chicken'],
-	    ['Tiramisu', 'Cheesecake', 'Cannoli', 'Ice Cream', 'Mille-feuille', 'Mafia'],
-	    ];
+    var menuNames = [
+    ['Bruschette with Tomatoes', 'Green Rolls', 'Eggplants', 'Bruschette', 'Meatballs', 'Spicy Beans'],
+    ['Carls Pasta', 'Italian Pasta', 'Semolina Pasta', 'Pasta con Broccoli', 'Crawfish Pasta', 'Taco Pasta'],
+    ['Duck Confit', 'Baked Fish', 'Steak', 'Crawfish', 'Veggie Beef', 'Chicken'],
+    ['Tiramisu', 'Cheesecake', 'Cannoli', 'Ice Cream', 'Mille-feuille', 'Mafia'],
+    ];
 	$(window).scroll(function(){
 		// dynamic menu highlight
 		var k = 10; // divide menu section to k slices
 		var idx = getIndexOfSubsection($('section.menu'), k);
 		if (!(idx > (k-4)/2 && idx < (k+4)/2+1)) return;
 		idx = idx - (k-4)/2;
+		$('.menu .overview h3').text($('.overview-list > a:nth-child(' + idx + ')').text());
 	    $('.overview-list > a:nth-child(' + idx + ')').css("background-color", "green").data("focused", 'true');
 	    $('.overview-list > a:not(.overview-list > a:nth-child(' + idx + '))').css("background-color", "black").data("focused", "false");
 	    // update images and titles
-	    
 	    for (var i = 0; i < 6; i++) {
 	    	var row = Math.floor(i / 2) + 1;
 	    	var col = i % 2 + 1;
