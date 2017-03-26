@@ -38,10 +38,10 @@ $(document).ready(function(){
 	    	var col = i % 2 + 1;
 	    	var imageName = menuTypes[idx-1] + '-' + i + '.jpg';
 	    	var viewContent = '.imageview > section.row:nth-child(' + row + ') > section:nth-of-type(' + col + ') > .view-content';
-		    $(viewContent).css('background-image', 'url(../../images/'+ imageName);
+		    $(viewContent).css('background-image', 'url(./images/'+ imageName);
 		    $(viewContent + ' a').text(menuNames[idx-1][i]);	
 		    var j = i + 1;
-		    $('section > .modal:nth-child(' + j + ') figure').css('background-image', 'url(../../images/'+ imageName);
+		    $('section > .modal:nth-child(' + j + ') figure').css('background-image', 'url(./images/'+ imageName);
 		    $('section > .modal:nth-child(' + j + ') h2').text(menuNames[idx-1][i]);
 	    }
 	});
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	    	var col = k % 2 + 1;
 	    	var imageName = menuTypes[idx-1] + '-' + k + '.jpg';
 	    	var viewContent = '.imageview > section.row:nth-child(' + row + ') > section:nth-of-type(' + col + ') > .view-content';
-		    $(viewContent).css('background-image', 'url(../../images/'+ imageName);
+		    $(viewContent).css('background-image', 'url(./images/'+ imageName);
 		    $(viewContent + ' a').text(menuNames[idx-1][k]);	
 		}
 	}
