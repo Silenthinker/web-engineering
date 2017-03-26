@@ -19,9 +19,9 @@ $(document).ready(function(){
 	var menuTypes = ['appetizer', 'pasta', 'meat', 'dessert'];
     var menuNames = [
     ['Bruschette with Tomatoes', 'Green Rolls', 'Eggplants', 'Bruschette', 'Meatballs', 'Spicy Beans'],
-    ['Carls Pasta', 'Italian Pasta', 'Semolina Pasta', 'Pasta con Broccoli', 'Crawfish Pasta', 'Taco Pasta'],
-    ['Duck Confit', 'Baked Fish', 'Steak', 'Crawfish', 'Veggie Beef', 'Chicken'],
-    ['Tiramisu', 'Cheesecake', 'Cannoli', 'Ice Cream', 'Mille-feuille', 'Mafia'],
+    ['Home-made Carls Pasta', 'Italian Pasta', 'Semo Pasta', 'Veggie Pasta', 'Craw Pasta', 'Taco Pasta'],
+    ['Special Duck Confit', 'Baked Fish', 'Swiss Steak', 'Crawfish', 'Veggie Beef', 'Asian Chicken'],
+    ['Recommended Tiramisu', 'Cheesecake', 'Fired Cannoli', 'Ice Cream', 'Mille-feuille', 'Sweet Mafia'],
     ];
 	$(window).scroll(function(){
 		// dynamic menu highlight
