@@ -391,6 +391,14 @@ section.welcome .book-button .book{
     font-size: 120%;
 }
 /*Section 2*/
+.welcome-intro{
+  position: relative;
+  left: -1000px;
+}
+.menu{
+  position: relative;
+  right: -1000px;
+}
 main.content{
 	margin-top: 70px;
 }
@@ -498,7 +506,7 @@ section.menu .imageview .view-content .tag:hover{
 	text-align: center;
 	background: linear-gradient(to bottom, rgba(255,100,100,1),rgba(0,0,0,0));
 	
-	border-top: 10px solid rgba(255,100,100,1);
+	border-top: 5px solid rgba(255,100,100,1);
 
 	
 }

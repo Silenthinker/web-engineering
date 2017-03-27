@@ -55,6 +55,26 @@ function checkAnimation() {
         $(".time-contact").animate({left: '0px'},800);
         $contact.addClass('end');
     }
+    /*For Welcome Intro*/
+    var $welcome = $('.welcome-intro');
+    // If the animation has already been started
+    if ($welcome.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($welcome)) {
+        $(".welcome-intro").animate({left: '0px'},800);
+        $welcome.addClass('end');
+    }
+    /*For the whole menu*/
+    var $menu = $('.menu');
+    // If the animation has already been started
+    if ($menu.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($menu)) {
+        $(".menu").animate({left: '0px'},800);
+        $menu.addClass('end');
+    }
 }
 
 // Capture scroll events
