@@ -75,6 +75,64 @@ function checkAnimation() {
         $(".menu").animate({left: '0px'},800);
         $menu.addClass('end');
     }
+    /*For contact menu*/
+    var $book = $('.book-table');
+    // If the animation has already been started
+    if ($book.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($book)) {
+        $(".book-table").animate({left: '0px'},800);
+        $book.addClass('end');
+    }
+    /*For contact menu*/
+    var $us = $('.contact-us-now');
+    // If the animation has already been started
+    if ($us.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($us)) {
+        $(".contact-us-now").animate({left: '0px'},800);
+        $us.addClass('end');
+    }
+    /*Event For Upcoming*/
+    var $Upcoming = $('.event');
+    // If the animation has already been started
+    if ($Upcoming.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($Upcoming)) {
+        $(".event").animate({left: '0px'},800);
+        $Upcoming.addClass('end');
+    }
+    /*For Introduction*/
+    var $eventIntro = $('.event-intro');
+    // If the animation has already been started
+    if ($eventIntro.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($eventIntro)) {
+        $(".event-intro").animate({left: '0px'},800);
+        $eventIntro.addClass('end');
+    }
+    var $bestIntro = $('.best-intro');
+    // If the animation has already been started
+    if ($bestIntro.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($bestIntro)) {
+        $(".best-intro").animate({left: '0px'},800);
+        $bestIntro.addClass('end');
+    }
+    var $conIntro = $('.contact-intro');
+    // If the animation has already been started
+    if ($conIntro.hasClass('end')) {
+
+    }
+    else if (isElementInViewport($conIntro)) {
+        $(".contact-intro").animate({left: '0px'},800);
+        $conIntro.addClass('end');
+    }
 }
 
 // Capture scroll events

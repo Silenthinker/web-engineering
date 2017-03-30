@@ -397,7 +397,15 @@ section.welcome .book-button .book{
 }
 .menu{
   position: relative;
-  right: -1000px;
+  right: -2000px;
+}
+.contact-intro{
+  position: relative;
+  right: -2000px;
+}
+.best-intro{
+  position: relative;
+  right: -2000px;
 }
 main.content{
 	margin-top: 70px;
@@ -1031,6 +1039,18 @@ div.contact-us ul {
 		width: 100%;
 	}
 }
+section.event{
+  position: relative;
+  left: -2000px;
+}
+.event-intro{
+  position: relative;
+  left: -2000px;
+}
+section.contact-us-now{
+  position: relative;
+  left: -2000px;
+}
 /* Book a table*/
 section.container.book-table {
 	clear: both;
@@ -1038,6 +1058,8 @@ section.container.book-table {
 	padding-bottom: 0px;
 	background: url("../../images/book-table.jpg") no-repeat fixed center;
 	background-size: 100% 100%;
+  position: relative;
+  left: -2000px;
 	/*outline: 1px solid black;*/
 }
 
