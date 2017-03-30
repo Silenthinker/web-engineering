@@ -230,6 +230,7 @@ header.navigation .nav-list li.logo{
 	position:relative;
 	top: 10px;
 }
+
 header.navigation .nav-list li.logo img{
 	width: 120px;
 	height: 120px;
@@ -364,7 +365,7 @@ section.welcome .headline{
   background-color: black;
   font-size: 500%;
   position: relative;
-  left: -100%;
+  left: -2000px;
 }
 section.welcome .book-button{
 	display: flex;
@@ -397,11 +398,11 @@ section.welcome .book-button .book{
 }
 .menu{
   position: relative;
-  right: -100%;
+  left: -100%;
 }
 .contact-intro{
   position: relative;
-  right: -100%;
+  left: -100%;
 }
 .best-intro{
   position: relative;
