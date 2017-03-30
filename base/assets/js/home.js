@@ -140,11 +140,5 @@ $(window).scroll(function(){
     checkAnimation();
 });
 $(document).ready(function(){
-    var $headline = $('.headline');
-    if ($headline.hasClass('end')) return;
-    if (isElementInViewport($headline)) {
-        /*implement here*/
-        $(".headline").animate({left: '0px'},800);
-        $headline.addClass('end');
-    }
+    checkAnimation();
 });

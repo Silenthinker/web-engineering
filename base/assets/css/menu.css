@@ -364,7 +364,7 @@ section.welcome .headline{
   background-color: black;
   font-size: 500%;
   position: relative;
-  left: -2000px;
+  left: -100%;
 }
 section.welcome .book-button{
 	display: flex;
@@ -393,19 +393,19 @@ section.welcome .book-button .book{
 /*Section 2*/
 .welcome-intro{
   position: relative;
-  left: -1000px;
+  left: -100%;
 }
 .menu{
   position: relative;
-  right: -2000px;
+  right: -100%;
 }
 .contact-intro{
   position: relative;
-  right: -2000px;
+  right: -100%;
 }
 .best-intro{
   position: relative;
-  right: -2000px;
+  left: -100%;
 }
 main.content{
 	margin-top: 70px;
@@ -439,7 +439,7 @@ article.intro-with-image{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  left: -2000px;
+  left: -100%;
 }
 
 div.parallax-intro{
@@ -840,7 +840,7 @@ div.container.upcoming-events {
 div.container.past-events {
 	 width: 80%;
    position: relative;
-   left: -2000px;
+   left: -100%;
 }
 
 div.container > h3 {
@@ -1041,15 +1041,15 @@ div.contact-us ul {
 }
 section.event{
   position: relative;
-  left: -2000px;
+  left: -100%;
 }
 .event-intro{
   position: relative;
-  left: -2000px;
+  left: -100%;
 }
 section.contact-us-now{
   position: relative;
-  left: -2000px;
+  left: -100%;
 }
 /* Book a table*/
 section.container.book-table {
@@ -1059,7 +1059,7 @@ section.container.book-table {
 	background: url("../../images/book-table.jpg") no-repeat fixed center;
 	background-size: 100% 100%;
   position: relative;
-  left: -2000px;
+  left: -100%;
 	/*outline: 1px solid black;*/
 }
 
@@ -1207,7 +1207,7 @@ section.time-contact{
 	margin-top: 0px;
 	padding-top: 0px;
   position: relative;
-  left: -2000px;
+  left: -100%;
 	/*outline: 1px solid black;*/
 }
 section.time-contact b{
